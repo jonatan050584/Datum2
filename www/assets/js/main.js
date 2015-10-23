@@ -1,5 +1,5 @@
 var nav = new Array("home");
-var path = "http://picnic.pe/clientes/datum/";
+var path = "http://192.168.0.12/datum/";
 var home;
 var header;
 var data;
@@ -30,11 +30,12 @@ $(document).ready(function(){
 var Data = function(){
 	this.iniciar = function(){
 		$.ajax({
-			crossDomain: true,
-			url:ruta("api/data.json"),
+			//crossDomain: true,
+			url:"assets/data.json",
 			dataType:'json',
 		}).done(function(res){
 			categorias = new Categorias(res.data);
+			categorias.listar();
 		});
 	}
 };
@@ -61,11 +62,40 @@ var Home = function(){
 	this.dom = $("#home");
 
 	this.dom.find(".btempezar").click(function(){
-		$("#home").hide();
+		/*$("#home").hide();
 		$("#menu").show();
 		header.showBack();
-		categorias.listar();
+		categorias.listar();*/
+		//history.pushState(null, null, "menu"); 
+		getContent("menu",true);
+		//e.preventDefault();
+		//location.href="menu";
 	})
+}
+window.onpopstate = function(event) {
+  alert(location.pathname);
+};
+
+
+function getContent(url,addEntry){
+
+	var ruta = url.split("/");
+
+	alert(ruta.length); 
+	if(ruta.length==1){
+		switch(ruta[0]){
+			case "menu":
+				$("#home").hide();
+				$("#menu").show();
+				break;
+		}
+	}
+	
+
+	if(addEntry == true) {
+		history.pushState(null, null, url); 
+	}
+
 }
 
 var Categorias = function(data){
