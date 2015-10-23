@@ -1,48 +1,60 @@
-<!DOCTYPE html> 
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
 	<title>Datum</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="stylesheet" href="assets/jquery.mobile-1.4.5/jquery.mobile-1.4.5.css">
-	<script src="assets/jquery.js"></script>
-	<script src="assets/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" href="assets/webfont/stylesheet.css">
+	<link rel="stylesheet" href="assets/estilo.css">
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/jquery.mobile.custom.min.js"></script>
+	<script src="assets/js/main.js"></script>
 </head>
-
 <body>
-<!-- Start of first page -->
-<div data-role="page" id="foo">
-
-	<div data-role="header">
-		<h1>Foo</h1>
-	</div><!-- /header -->
-
-	<div role="main" class="ui-content">
-		<p>I'm first in the source order so I'm shown as the page.</p>
-		<p>View internal page called <a href="#bar">bar</a></p>
-	</div><!-- /content -->
-
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div><!-- /footer -->
-</div><!-- /page -->
-
-<!-- Start of second page -->
-<div data-role="page" id="bar">
-
-	<div data-role="header">
-		<h1>Bar</h1>
-	</div><!-- /header -->
-
-	<div role="main" class="ui-content">
-		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
-		<p><a href="#foo">Back to foo</a></p>
-	</div><!-- /content -->
-
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div><!-- /footer -->
-</div><!-- /page -->
-
+<div id="nav">
+	<div class="back"></div>
+	<div class="titulo">RESUMEN</div>
+</div>
+<div class="seccion" id="home">
+	<img src="assets/images/logo.png" height="55" width="174" alt="" class="logo">
+	<div class="texto">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudexe rcit tion ullamco laboris nisi ut aliquip e ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla Ecupi nostrudexe cit tion ullamco laboris nisi ut aliquip ex.
+<br><br>
+Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla Ecupi Ut enim ad minim veniam, quis nostrudexe rcit tion ullamco laboris nisi ut.sadasdasas Jonatan
+	</div>
+	<div class="btempezar">EMPEZAR</div>
+</div>
+<div class="seccion" id="menu">
+	<!--<div class="item cat">
+		<div class="bt" style="background-image:url('assets/b1.png');">
+			<div class="nom"><div class="txt">{nombre}</div></div>
+		</div>
+	</div>-->
+	
+	<div class="item cat">
+		<div class="bt" style="background-image:url('assets/images/b6.png');">
+			<div class="nom"><div class="txt">FICHA<br>TÉCNICA</div></div>
+		</div>
+	</div>
+	<div class="item bottom">
+		<div class="bt">CONTACTO</div>
+	</div>
+	<div class="item bottom">
+		<div class="bt">DATUM</div>
+	</div>
+	<div class="item"></div>
+	<div class="clear"></div>
+</div>
+<div class="seccion" id="temas">
+	<div class="banner">
+		<div class="area">
+			<div class="categoria"></div>
+		</div>
+	</div>
+	<div class="lista">
+		<!--<div class="item"><div class="txt">Lorem ipsum dolor sit amet</div></div>-->
+		
+	</div>
+</div>
 </body>
 </html>
