@@ -1,5 +1,5 @@
 var nav = new Array("home");
-var path = "http://localhost/datum/";
+var path = "http://192.168.0.12/datum/";
 var home;
 var header;
 var data;
