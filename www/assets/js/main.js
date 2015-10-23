@@ -1,5 +1,5 @@
 var nav = new Array("home");
-var path = "http://192.168.0.12/datum/";
+var path = "http://picnic.pe/clientes/datum/";
 var home;
 var header;
 var data;
