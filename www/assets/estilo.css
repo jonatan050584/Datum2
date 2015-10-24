@@ -40,7 +40,6 @@ html {
 }
 #home{
 	padding: 56px 35px;
-	display: block;
 }
 #home .logo{
 	margin: auto;
@@ -108,20 +107,20 @@ html {
 	text-align: center;
 }
 
-#temas .banner{
+#categoria .banner{
 	height: 205px;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	position: relative;
 }
-#temas .banner .area{
+#categoria .banner .area{
 	height: 100%;
 	width: 100%;
 	background:  no-repeat center 50px;
 	background-size: 63px auto;
 }
-#temas .banner .area .categoria{
+#categoria .banner .area .nombre{
 	font-family: 'HelveticaNeueBold';
 	color: #fff;
 	padding-top: 117px;
@@ -129,18 +128,18 @@ html {
 	text-align: center;
 	text-transform: uppercase;
 }
-#temas .lista .item{
+#categoria .lista .item{
 	height: 47px;
 	border-bottom: solid 1px #c7c7c7;
 	background-color: #e9e9e9;
 	display: table;
 	width: 100%;
 }
-#temas .lista .item.ani{
+#categoria .lista .item.ani{
 	background: #d8d8d8 url(images/sub.png) no-repeat calc(100% - 3px) center;
 	background-size: 18px auto;
 }
-#temas .lista .item .txt{
+#categoria .lista .item .txt{
 	display: table-cell;
 	font-size: 13px;
 	vertical-align: middle;
