@@ -13,9 +13,34 @@ var Menu = function(){
 
 	$("#menu").append(preHTML);
 
-	$("#menu .item.contacto").on("tap",function(){
-		getContent({page:"contacto"},true);
-	});
+
+
+	
+
+
+	if(produccion){
+		$("#menu .item.bottom").on({
+			"touchstart":function(){
+				$(this).addClass("over");
+			},
+			"touchend":function(){
+				$(this).removeClass("over");
+				if($(this).hasClass("contacto")) getContent({page:"contacto"},true);
+				else if($(this).hasClass("datum")) getContent({page:"datum"},true);
+			}
+		})
+	}else{
+		$("#menu .item.bottom").bind({
+			"mousedown":function(){
+				$(this).addClass("over");
+			},
+			"mouseup":function(){
+				$(this).removeClass("over");
+				if($(this).hasClass("contacto")) getContent({page:"contacto"},true);
+				else if($(this).hasClass("datum")) getContent({page:"datum"},true);
+			}
+		})
+	}
 
 }
 
@@ -26,7 +51,7 @@ var ItemCategoria = function(key){
 	this.template = '<div class="item cat" id="cat-{id}" data-id="{id}">'+
 		'<div class="bt">'+
 			'<div class="con">'+
-				'<img src="files/{icono}" height="63" width="66" alt="" class="ico">'+
+				'<div class="ico"></div>'+
 				'<div class="nom"><div class="txt">{nombre}</div></div>'+
 			'</div>'+
 			
@@ -45,10 +70,31 @@ var ItemCategoria = function(key){
 	
 	$("#menu").append(this.dom);
 
-	//this.dom.find(".bt").css("background-image","url("+ruta("files/"+it.icono)+")");
+
+	this.dom.find(".ico").css("background-image","url("+ruta("files/iconos/"+it.icono)+")");
 	
-	this.dom.on("tap",function(){
-		getContent({page:"categoria",keycat:key,padre:null},true);
-	});
+
+	if(produccion){
+		this.dom.on({
+			"touchstart":function(){
+				$(this).addClass("over");
+			},
+			"touchend":function(){
+				$(this).removeClass("over");
+				getContent({page:"categoria",keycat:key,padre:null},true);
+			}
+		})
+	}else{
+		this.dom.bind({
+			"mousedown":function(){
+				$(this).addClass("over");
+			},
+			"mouseup":function(){
+				$(this).removeClass("over");
+				getContent({page:"categoria",keycat:key,padre:null},true);
+			}
+		})
+	}
+	
 
 }

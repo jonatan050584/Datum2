@@ -12,6 +12,7 @@ var data;
 
 var seccion = "home";
 
+var produccion=true;
 
 
 function ruta(str){
@@ -106,10 +107,10 @@ var Seccion = function(){
 	this.mostrar = function(){
 
 		header.setTitulo(this.titulo);
-		this.dom.delay(100).fadeIn(100);
+		this.dom.show();
 	}
 	this.ocultar = function(){
-		this.dom.fadeOut(100);
+		this.dom.hide();
 	}
 }
 
