@@ -2,11 +2,11 @@ var Home = function(){
 	this.titulo = "RESUMEN";
 	this.dom = $("#home");
 
-	$("#home .btempezar").bind({
-		mousedown:function(){
+	$("#home .btempezar").on({
+		'touchstart':function(){
 			$(this).addClass("over");
 		},
-		mouseup:function(){
+		'touchend':function(){
 			getContent({page:"menu"},true);
 			$(this).removeClass("over");
 		}
