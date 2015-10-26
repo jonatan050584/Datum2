@@ -11,7 +11,7 @@ var Sondeo = function(){
 		$("#sondeo .graficos").empty();
 
 		$.each(data.sondeo,function(key,val){
-			
+			console.log(val);
 			var grafico = new Grafico(val);
 
 		
@@ -23,15 +23,17 @@ Sondeo.prototype = new Seccion();
 
 
 var Grafico = function(data){
-	var html = $('<div class="grafico"><div class="area"></div><div class="info"></div></div>');
+	var html = $('<div class="grafico"><div class="area" id="chart'+data.id+'"></div><div class="info"></div></div>');
 	html.addClass(data.tipo);
 	$("#sondeo .graficos").append(html);
 	var graph;
 	switch(data.tipo){
 		case "pie":
-
-			graph = new Pie(html,data);
-			graph.cargar();
+			setTimeout(function(){
+				graph = new Pie(html,data);
+				graph.cargar();
+			},1000)
+			
 			break;
 	}
 

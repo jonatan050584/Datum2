@@ -1,6 +1,6 @@
 var Pie = function(dom,val){
     this.data = val;
-	this.dom = dom.find(".area");
+	
     this.colors = shuffle(colors);
 
     this.titulo = null;
@@ -14,8 +14,10 @@ var Pie = function(dom,val){
 	this.cargar = function(){
        
         console.log(dom);
-		this.dom.highcharts({
+		var chart = new Highcharts.Chart({
+
             chart: {
+                renderTo:'chart'+val.id,
                 plotBackgroundColor: 0,
                 plotBorderWidth: 0,
                 plotShadow: false,
