@@ -71,6 +71,9 @@ function getContent(obj,addEntry){
 	if(seccion=="home") header.hideBack();
 	else header.showBack();
 
+	if(seccion=="sondeo") header.showMenu();
+	else header.hideMenu();
+
 	window[antseccion].ocultar();
 	window[seccion].mostrar();
 

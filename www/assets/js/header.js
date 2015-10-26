@@ -13,6 +13,36 @@ var Header = function(dom){
 
 	$("#nav .back").on("tap",function(){
 		history.go(-1);
+	});
+
+	this.showMenu = function(){
+		
+		$("#nav .actions").show();
+	}
+	this.hideMenu = function(){
+		
+		$("#nav .actions").hide();
+	}
+	$("#nav .actions").on("tap",function(){
+		if(seccion=="sondeo"){
+			if(!$(this).hasClass("activo")){
+				$("#nav .back").hide();
+				$(this).addClass("activo");
+				$("#menusondeo").show();
+				$("#cubre").show();
+			}else{
+				$("#nav .back").show();
+				$(this).removeClass("activo");
+				$("#menusondeo").hide();
+				$("#cubre").hide();
+			}
+		}
 	})
 
 }
+
+$("#menusondeo .item").click(function(){
+	if($(this).hasClass("share")){
+		window.plugins.socialsharing.share('Message only');
+	}
+})

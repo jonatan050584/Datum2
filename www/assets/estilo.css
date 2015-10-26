@@ -34,6 +34,27 @@ html {
 	height: 50px;
 	display: none;
 }
+#nav .actions{
+	position: absolute;
+	right: 0px;
+	width: 50px;
+	height: 50px;
+	display: none;
+	
+}
+#nav .actions.activo{
+	opacity: 0.7;
+}
+#nav .actions .line{
+	width: 32px;
+	margin: auto;
+	height: 4px;
+	margin-top: 5px;
+	background: #fff;
+}
+#nav .actions .line:first-child{
+	margin-top: 15px;
+}
 .seccion{
 	margin-top: 50px;
 	display: none;
@@ -229,4 +250,39 @@ html {
 	vertical-align: middle;
 	padding-left: 80px;
 	color: #545454;
+}
+#menusondeo{
+	position: fixed;
+	width: 100%;
+	height: auto;
+	z-index: 300;
+	display: none;
+}
+#menusondeo .item{
+	height: 48px;
+	background: #e9e9e9;
+	display: table;
+	width: 100%;
+	border-top: #c7c7c7 solid 1px;
+}
+#menusondeo .item .texto{
+	display: table-cell;
+	font-family: 'HelveticaNeueLight';
+	font-size: 16px;
+	vertical-align: middle;
+	padding-left: 12px;
+	color: #545454;
+	
+}
+#menusondeo .item:first-child{
+	border-top: none;
+}
+#cubre{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	opacity: 0.6;
+	z-index: 100;
+	display: none;
 }
