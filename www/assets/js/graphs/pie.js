@@ -83,7 +83,7 @@ var Pie = function(val){
 	        	enabled:false
 	        },
 	        exporting:{
-	        	enabled:true
+	        	enabled:false
 	        }
         });
 	}

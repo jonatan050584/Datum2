@@ -37,12 +37,14 @@ var Header = function(dom){
 				$("#cubre").hide();
 			}
 		}
+	});
+
+	$("#menusondeo .item").click(function(){
+		if($(this).hasClass("share")){
+			window.plugins.socialsharing.share('Message and image', null, 'https://www.google.nl/images/srpr/logo4w.png', 'http://picnic.pe')
+			//window.plugins.socialsharing.share('Message only');
+		}
 	})
 
 }
 
-$("#menusondeo .item").click(function(){
-	if($(this).hasClass("share")){
-		window.plugins.socialsharing.share('Message only');
-	}
-})
