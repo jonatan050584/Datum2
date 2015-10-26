@@ -207,6 +207,18 @@ html {
 	display: table;
 	border-top: #c7c7c7 solid 1px;
 }
+#contacto .item.dir{
+	background-image: url("images/dir.png");
+}
+#contacto .item.tel{
+	background-image: url("images/tel.png");
+}
+#contacto .item.web{
+	background-image: url("images/web.png");
+}
+#contacto .item.em{
+	background-image: url("images/em.png");
+}
 #contacto .item:first-child{
 	border-top: none;
 }
