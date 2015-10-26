@@ -13,6 +13,10 @@ var Menu = function(){
 
 	$("#menu").append(preHTML);
 
+	$("#menu .item.contacto").on("tap",function(){
+		getContent({page:"contacto"},true);
+	});
+
 }
 
 Menu.prototype = new Seccion();

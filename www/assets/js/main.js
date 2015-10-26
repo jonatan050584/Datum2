@@ -3,6 +3,7 @@ var path = "";
 var header;
 var home;
 var menu;
+var contacto;
 var categoria;
 var sondeo;
 
@@ -33,6 +34,7 @@ function iniciar(){
 	menu = new Menu();
 	categoria = new Categoria();
 	sondeo = new Sondeo();
+	contacto = new Contacto();
 
 	getContent({page:"home"},true);
 }
