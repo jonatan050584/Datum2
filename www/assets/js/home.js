@@ -2,10 +2,15 @@ var Home = function(){
 	this.titulo = "RESUMEN";
 	this.dom = $("#home");
 
-	$("#home .btempezar").click(function(){
-	
-		getContent({page:"menu"},true);
-	
+	$("#home .btempezar").bind({
+		mousedown:function(){
+			$(this).addClass("over");
+		},
+		mouseup:function(){
+			getContent({page:"menu"},true);
+			$(this).removeClass("over");
+		}
+		
 	});
 
 }

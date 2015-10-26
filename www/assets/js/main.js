@@ -106,10 +106,10 @@ var Seccion = function(){
 	this.mostrar = function(){
 
 		header.setTitulo(this.titulo);
-		this.dom.show();
+		this.dom.delay(100).fadeIn(100);
 	}
 	this.ocultar = function(){
-		this.dom.hide();
+		this.dom.fadeOut(100);
 	}
 }
 

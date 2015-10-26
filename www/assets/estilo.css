@@ -1,9 +1,10 @@
 body{
 	margin: 0px;
 	padding: 0px;
-
+	height: 100%;
 }
 html {
+	height: 100%;
     -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
 }
 .clear{
@@ -56,11 +57,20 @@ html {
 	margin-top: 15px;
 }
 .seccion{
-	margin-top: 50px;
 	display: none;
 }
 #home{
-	padding: 56px 35px;
+	height: calc(100% - 50px);
+	display: none;
+}
+#home .area{
+	display: table;
+	height: 100%;
+}
+#home .cont{
+	display: table-cell;
+	vertical-align: middle;
+	padding:0 35px;
 }
 #home .logo{
 	margin: auto;
@@ -86,22 +96,41 @@ html {
 	margin: auto;
 	border: solid 1px #9e027e;
 }
+#home .btempezar.over{
+	background: #9e027e;
+	color: #fff;
+}
 #menu{
 	background: #fff;
 	padding: 1px;
+
+	/*height: 487px;*/
+	height: calc(100% - 52px);
 }
 #menu .item{
 	width: 50%;
 	float: left;
+	height: calc(100%/3 - 37px/3);
+	display: table;
 }
 #menu .item .bt{
-	margin: 1px;
+	border: solid 1px #fff;
 	background: #e9e9e9;
-	height: 150px;
-	background-size: 66px 63px;
-	background-repeat: no-repeat;
-	background-position: center 30px;
+	height: 100%;
+	display: table-cell;
+	width: 100%;
 	position: relative;
+	vertical-align: middle;
+}
+#menu .item .bt .con{
+	height: 108px;
+	width: 100%;
+	position: relative;
+}
+#menu .item .bt .con .ico{
+	width: 66px;
+	display: block;
+	margin: auto;
 }
 #menu .item .bt .nom{
 	font-family: 'HelveticaNeueBold';
@@ -110,7 +139,6 @@ html {
 	color: #444444;
 	font-size: 17px;
 	text-align: center;
-	margin-top: 90px;
 	height: 45px;
 	display: table;
 }
@@ -119,9 +147,12 @@ html {
 	text-transform: uppercase;
 	vertical-align: middle;
 }
+#menu .item.bottom{
+	height: 37px;
+}
 #menu .item.bottom .bt{
 	background: #5d5d5d;
-	height: 35px;
+	height: calc(100% - 2px);
 	font-family: 'HelveticaNeueBold';
 	font-size: 17px;
 	color: #fff;
@@ -285,4 +316,7 @@ html {
 	opacity: 0.6;
 	z-index: 100;
 	display: none;
+}
+@media (max-height:700px){
+	
 }
