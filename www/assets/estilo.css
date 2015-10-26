@@ -151,14 +151,21 @@ html {
 
 #sondeo{
 	padding: 20px;
+	overflow-x: hidden;
 }
 #sondeo .grafico .area{
 	width: 100%;
 }
 #sondeo .grafico.pie .area{
-	height: 550px;
+	height: 400px;
 }
-
+#sondeo .grafico.stockbar .area{
+	overflow-x:scroll;
+	height: 700px;
+}
+#sondeo .grafico.line .area{
+	height: 340px;
+}
 #sondeo h1.titulo{
 	color: #444444;
 	font-weight: normal;
@@ -172,4 +179,14 @@ html {
 	line-height: 18px;
 	color: #545454;
 	text-align: center;
+}
+#sondeo .info{
+	font-family: 'HelveticaNeueLight';
+	font-size: 13px;
+	color: #545454;
+	line-height: 19px;
+}
+#sondeo .info strong{
+	font-weight: normal;
+	font-family: 'HelveticaNeueBold';
 }

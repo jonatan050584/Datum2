@@ -4,6 +4,7 @@ var Sondeo = function(){
 	this.cargar = function(data){
 		
 		$("#sondeo .titulo").html(data.titulo);
+		$("#sondeo .info").html(data.info);
 		
 		if(data.subtitulo==null) $("#sondeo .subtitulo").html("").hide();
 		else $("#sondeo .subtitulo").html(data.subtitulo).show();
@@ -30,9 +31,22 @@ var Grafico = function(data){
 	switch(data.tipo){
 		case "pie":
 			setTimeout(function(){
-				graph = new Pie(html,data);
+				graph = new Pie(data);
 				graph.cargar();
-			},1000)
+			},1000);
+			
+			break;
+		case "line":
+			setTimeout(function(){
+				graph = new Line(data);
+				graph.cargar();
+			},1000);
+			break;
+		case "stockbar":
+			setTimeout(function(){
+				graph = new StockBar(data);
+				graph.cargar();
+			},1000);
 			
 			break;
 	}

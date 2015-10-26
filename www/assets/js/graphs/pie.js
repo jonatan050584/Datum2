@@ -1,4 +1,4 @@
-var Pie = function(dom,val){
+var Pie = function(val){
     this.data = val;
 	
     this.colors = shuffle(colors);
@@ -12,8 +12,7 @@ var Pie = function(dom,val){
     this.color = shuffle(colors);
 
 	this.cargar = function(){
-       
-        console.log(dom);
+
 		var chart = new Highcharts.Chart({
 
             chart: {
