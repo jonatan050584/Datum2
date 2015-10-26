@@ -8,6 +8,10 @@ var Contacto = function(){
 	$("#contacto .web").on("tap",function(){
 		var ref = cordova.InAppBrowser.open("http://picnic.pe", "_system","location=yes");
 	})
+	$("#contacto .tel").on("tap",function(){
+		window.plugins.CallNumber.callNumber(function(){
+		alert("ok")}, function(){alert("error")}, "+5116472316");
+	})
 
 };
 Contacto.prototype = new Seccion();
