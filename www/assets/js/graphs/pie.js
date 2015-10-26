@@ -1,3 +1,4 @@
+var chartpie;
 var Pie = function(val){
     this.data = val;
 	
@@ -13,7 +14,7 @@ var Pie = function(val){
 
 	this.cargar = function(){
 
-		var chart = new Highcharts.Chart({
+		chartpie = new Highcharts.Chart({
 
             chart: {
                 renderTo:'chart'+val.id,

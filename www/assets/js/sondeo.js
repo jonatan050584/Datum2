@@ -17,6 +17,14 @@ var Sondeo = function(){
 
 		
 		});
+
+		$("#btsvg").on("tap",function(){
+			//alert(chartpie.getSVG());
+			canvg(document.getElementById('canvas'), chartpie.getSVG());
+
+
+			window.plugins.socialsharing.share('Message and image', null, canvas.toDataURL(), 'http://picnic.pe')
+		})
 		
 	}
 }
