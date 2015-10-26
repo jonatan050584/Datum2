@@ -10,7 +10,25 @@
 					"id":1,
 					"titulo":"Aprobación de Ollanta Humala",
 					"hijos":false,
-					"padre":null
+					"padre":null,
+					"info":null,
+					"subtitulo":null,
+					"subtitulo":"El gobierno ha aprobado un proyecto de ley que permite el acceso a viviendas a través del leasing y alquiler-venta. Dígame, ¿con esta ley aprobada, Ud. utilizaría o no utilizaría este sistema para comprar una vivienda",
+					"sondeo":[{
+						"tipo":"pie",
+						"titulo":null,
+						"subtitulo":null,
+						"data":",%\nSí existe,19\nNo existe,76\nNs/nc,5",
+						"info":"Total 100%<br><strong>Base:</strong> 1200 entrevistas"
+					},{
+						"tipo":"pie",
+						"titulo":null,
+						"subtitulo":null,
+						"data":",%\nSí existe,19\nNo existe,76\nNs/nc,5",
+						"info":"Total 100%<br><strong>Base:</strong> 2200 entrevistas"
+					}]
+
+					
 				},
 				{
 					"id":2,

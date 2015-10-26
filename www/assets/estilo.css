@@ -53,6 +53,7 @@ html {
 	line-height: 18px;
 	color: #545454;
 	margin-bottom: 30px;
+
 }
 #home .btempezar{
 	font-family: 'HelveticaNeueBold';
@@ -146,4 +147,29 @@ html {
 	font-family: 'HelveticaNeueLight';
 	padding: 0px 9px;
 
+}
+
+#sondeo{
+	padding: 20px;
+}
+#sondeo .grafico .area{
+	width: 100%;
+}
+#sondeo .grafico.pie .area{
+	height: 550px;
+}
+
+#sondeo h1.titulo{
+	color: #444444;
+	font-weight: normal;
+	font-family: 'HelveticaNeueBold';
+	font-size: 20px;
+	text-align: center;
+}
+#sondeo .subtitulo{
+	font-family: 'HelveticaNeueLight';
+	font-size: 14px;
+	line-height: 18px;
+	color: #545454;
+	text-align: center;
 }

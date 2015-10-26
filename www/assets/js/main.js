@@ -1,10 +1,10 @@
-var path = "http://picnic.pe/clientes/datum/";
+var path = "";
 
 var header;
 var home;
 var menu;
 var categoria;
-var grafico;
+var sondeo;
 
 
 var data;
@@ -32,7 +32,7 @@ function iniciar(){
 	home = new Home();
 	menu = new Menu();
 	categoria = new Categoria();
-	grafico = new Grafico();
+	sondeo = new Sondeo();
 
 	getContent({page:"home"},true);
 }
@@ -60,9 +60,10 @@ function getContent(obj,addEntry){
 		case "categoria":
 			categoria.cargar(obj.keycat,obj.padre);
 			break;
-		case "grafico":
-			grafico.cargar();
+		case "sondeo":
+			sondeo.cargar(obj.tema);
 			break;
+
 	}
 
 	if(seccion=="home") header.hideBack();

@@ -51,7 +51,7 @@ var ItemTema = function(keycat,data){
 			getContent({page:"categoria",keycat:keycat,padre:data.id},true);
 			
 		}else{
-			getContent({page:"grafico"},true);
+			getContent({page:"sondeo",tema:data},true);
 		}
 	})
 
