@@ -105,8 +105,10 @@ var Header = function(dom){
 				if($(this).hasClass("share")){
 					canvg(document.getElementById('canvas'), graph.getSVG());
 
-					alert(canvas.toDataURL());
-					window.plugins.socialsharing.share("Mensaje", null, canvas.toDataURL(), 'http://www.datum.com.pe');
+					
+					window.plugins.socialsharing.share("Mensaje", null, null, 'http://www.datum.com.pe');
+
+					header.hideMenu();
 				}
 			}
 		});
