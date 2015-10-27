@@ -16,7 +16,7 @@ var Contacto = function(){
 				}else if($(this).hasClass("web")){
 					var ref = cordova.InAppBrowser.open("http://www.datum.com.pe", "_system","location=yes");
 				}else if($(this).hasClass("tel")){
-					var ref = cordova.InAppBrowser.open("tel:+5116472316", "_system","location=yes");
+					var ref = cordova.InAppBrowser.open("tel:+5112150600", "_system","location=yes");
 				}else if($(this).hasClass("em")){
 					var ref = cordova.InAppBrowser.open("mailto:datum@datum.com", "_system","location=yes");
 				}
