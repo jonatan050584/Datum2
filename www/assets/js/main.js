@@ -12,7 +12,7 @@ var data;
 
 var seccion = "home";
 
-var produccion=true;
+var produccion=false;
 
 
 function ruta(str){
@@ -72,8 +72,12 @@ function getContent(obj,addEntry){
 	if(seccion=="home") header.hideBack();
 	else header.showBack();
 
-	if(seccion=="sondeo") header.showMenu();
-	else header.hideMenu();
+	if(seccion=="sondeo"){
+		header.showMenu();
+	}else{
+		
+		header.hideMenu();
+	}
 
 	window[antseccion].ocultar();
 	window[seccion].mostrar();

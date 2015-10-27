@@ -42,18 +42,43 @@ var ItemTema = function(keycat,data){
 		html = html.replace("{class}",cl);
 	this.dom = $(html);
 	$("#categoria .lista").append(this.dom);
+
+
+
+	if(produccion){
+		this.dom.on({
+			"touchstart":function(){
+				$(this).addClass("over");
+			},
+			"touchend":function(){
+				$(this).removeClass("over");
+				
+				if(data.hijos==true){
+					getContent({page:"categoria",keycat:keycat,padre:data.id},true);			
+				}else{
+					getContent({page:"sondeo",tema:data},true);
+				}
+			}
+		})
+	}else{
+		this.dom.bind({
+			"mousedown":function(){
+				$(this).addClass("over");
+			},
+			"mouseup":function(){
+				$(this).removeClass("over");
+				if(data.hijos==true){
+					getContent({page:"categoria",keycat:keycat,padre:data.id},true);			
+				}else{
+					getContent({page:"sondeo",tema:data},true);
+				}
+			}
+		})
+	}
+
+
 	
-	this.dom.on("tap",function(){
-
-		if(data.hijos==true){
-
-
-			getContent({page:"categoria",keycat:keycat,padre:data.id},true);
-			
-		}else{
-			getContent({page:"sondeo",tema:data},true);
-		}
-	})
+	
 
 
 }

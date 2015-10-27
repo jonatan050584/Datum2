@@ -18,18 +18,12 @@ var Sondeo = function(){
 		
 		});
 
-		$("#btsvg").on("tap",function(){
-			//alert(chartpie.getSVG());
-			canvg(document.getElementById('canvas'), chartpie.getSVG());
-
-
-			window.plugins.socialsharing.share('Message and image', null, canvas.toDataURL(), 'http://picnic.pe')
-		})
 		
 	}
 }
 Sondeo.prototype = new Seccion();
 
+var graph;
 
 var Grafico = function(data){
 	var html = $('<div class="grafico"><div class="area" id="chart'+data.id+'"></div><div class="info"></div></div>');

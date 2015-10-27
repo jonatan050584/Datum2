@@ -26,7 +26,7 @@ var Menu = function(){
 			"touchend":function(){
 				$(this).removeClass("over");
 				if($(this).hasClass("contacto")) getContent({page:"contacto"},true);
-				else if($(this).hasClass("datum")) getContent({page:"datum"},true);
+				//else if($(this).hasClass("datum")) getContent({page:"datum"},true);
 			}
 		})
 	}else{
@@ -37,7 +37,7 @@ var Menu = function(){
 			"mouseup":function(){
 				$(this).removeClass("over");
 				if($(this).hasClass("contacto")) getContent({page:"contacto"},true);
-				else if($(this).hasClass("datum")) getContent({page:"datum"},true);
+				//else if($(this).hasClass("datum")) getContent({page:"datum"},true);
 			}
 		})
 	}
