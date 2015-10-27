@@ -68,16 +68,16 @@ function getContent(obj,addEntry){
 			break;
 
 	}
-
-	if(seccion=="home") header.hideBack();
-	else header.showBack();
-
 	if(seccion=="sondeo"){
 		header.showMenu();
 	}else{
 
 		header.hideMenu();
 	}
+	if(seccion=="home") header.hideBack();
+	else header.showBack();
+
+	
 
 	window[antseccion].ocultar();
 	window[seccion].mostrar();

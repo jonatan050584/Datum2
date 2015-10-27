@@ -335,6 +335,13 @@ html {
 #contacto .item:first-child{
 	border-top: none;
 }
+#contacto .item.over{
+	background-color: #9e027e;
+}
+#contacto .item.over .texto{
+	background-color: #9e027e;
+	color: #fff;
+}
 #contacto .item .texto{
 	display: table-cell;
 	font-family: 'HelveticaNeueLight';
@@ -342,6 +349,10 @@ html {
 	vertical-align: middle;
 	padding-left: 80px;
 	color: #545454;
+}
+#contacto .item.over .texto{
+	background-color: #9e027e;
+	color: #fff;
 }
 #menusondeo{
 	position: fixed;
