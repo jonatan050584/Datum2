@@ -104,7 +104,9 @@ var Header = function(dom){
 				
 				if($(this).hasClass("share")){
 					canvg(document.getElementById('canvas'), graph.getSVG());
-					window.plugins.socialsharing.share($("#sondeo .titulo").html(), null, canvas.toDataURL(), 'http://www.datum.com.pe');
+
+					alert(canvas.toDataURL());
+					window.plugins.socialsharing.share("Mensaje", null, canvas.toDataURL(), 'http://www.datum.com.pe');
 				}
 			}
 		});
@@ -118,7 +120,8 @@ var Header = function(dom){
 				if($(this).hasClass("share")){
 					header.hideMenu();
 					canvg(document.getElementById('canvas'), graph.getSVG());
-					window.plugins.socialsharing.share($("#sondeo .titulo").html(), null, canvas.toDataURL(), 'http://www.datum.com.pe');
+					console.log(canvas.toDataURL());
+					//window.plugins.socialsharing.share($("#sondeo .titulo").html(), null, canvas.toDataURL(), 'http://www.datum.com.pe');
 					
 				}
 				
