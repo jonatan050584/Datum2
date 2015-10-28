@@ -17,7 +17,10 @@ var Sondeo = function(){
 
 		
 		});
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 17d7467... share
 		
 	}
 }

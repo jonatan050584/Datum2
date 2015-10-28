@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 17d7467... share
 var Pie = function(val){
     this.data = val;
 	
@@ -14,7 +17,11 @@ var Pie = function(val){
 
 	this.cargar = function(){
 
+<<<<<<< HEAD
 		graph = new Highcharts.Chart({
+=======
+		var chart = new Highcharts.Chart({
+>>>>>>> parent of 17d7467... share
 
             chart: {
                 renderTo:'chart'+val.id,
