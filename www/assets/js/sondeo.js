@@ -1,8 +1,8 @@
 var Sondeo = function(){
 	this.dom = $("#sondeo");
 
-	this.cargar = function(data){
-		
+	this.cargar = function(data,categoria){
+		header.setTitulo(categoria);
 		$("#sondeo .titulo").html(data.titulo);
 		$("#sondeo .info").html(data.info);
 		
@@ -12,7 +12,7 @@ var Sondeo = function(){
 		$("#sondeo .graficos").empty();
 
 		$.each(data.sondeo,function(key,val){
-			console.log(val);
+			
 			var grafico = new Grafico(val);
 
 		
@@ -44,9 +44,17 @@ var Grafico = function(data){
 				graph.cargar();
 			},1000);
 			break;
-		case "stockbar":
+		case "bar":
 			setTimeout(function(){
-				graph = new StockBar(data);
+				graph = new Bar(data);
+				graph.cargar();
+			},1000);
+			break;
+
+		case "column":
+		
+			setTimeout(function(){
+				graph = new Column(data);
 				graph.cargar();
 			},1000);
 			

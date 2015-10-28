@@ -109,6 +109,8 @@ var Header = function(dom){
 					window.plugins.socialsharing.share("Mensaje", null, null, 'http://www.datum.com.pe');
 
 					header.hideMenu();
+				}else if($(this).hasClass("resumen")){
+					getContent({page:"resumen"},true);
 				}
 			}
 		});
@@ -125,6 +127,8 @@ var Header = function(dom){
 					console.log(canvas.toDataURL());
 					//window.plugins.socialsharing.share($("#sondeo .titulo").html(), null, canvas.toDataURL(), 'http://www.datum.com.pe');
 					
+				}else if($(this).hasClass("resumen")){
+					getContent({page:"resumen"},true);
 				}
 				
 			}

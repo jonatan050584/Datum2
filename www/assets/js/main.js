@@ -6,7 +6,8 @@ var menu;
 var contacto;
 var categoria;
 var sondeo;
-
+var datum;
+var resumen;
 
 var data;
 
@@ -36,7 +37,8 @@ function iniciar(){
 	categoria = new Categoria();
 	sondeo = new Sondeo();
 	contacto = new Contacto();
-
+	datum = new Datum();
+	resumen = new Resumen();
 	getContent({page:"home"},true);
 }
 
@@ -64,7 +66,7 @@ function getContent(obj,addEntry){
 			categoria.cargar(obj.keycat,obj.padre);
 			break;
 		case "sondeo":
-			sondeo.cargar(obj.tema);
+			sondeo.cargar(obj.tema,obj.categoria);
 			break;
 
 	}
@@ -94,10 +96,11 @@ var Datos = function(){
 		$.ajax({
 			//crossDomain: true,
 			url:"assets/data3.json",
+			//url:"assets/json.php",
 			dataType:'json',
 		}).done(function(res){
 			data = res.data;
-
+			console.log(data);
 			iniciar()
 
 		

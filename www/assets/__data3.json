@@ -1,0 +1,201 @@
+{
+	"data":[
+		{
+			"id":1,
+			"nombre":"Popularidad",
+			"icono":"b1.png",
+			"imagen":"imgbg.jpg",
+			"temas":[
+				{
+					"id":1,
+					"titulo":"Aprobación de Ollanta Humala",
+					"subtitulo":"El gobierno ha aprobado un proyecto de ley que permite el acceso a viviendas a través del leasing y alquiler-venta. Dígame, ¿con esta ley aprobada, Ud. utilizaría o no utilizaría este sistema para comprar una vivienda",
+					"hijos":false,
+					"padre":null,
+					"info":"Total 100%<br><strong>Base:</strong> 1200 entrevistas",
+					"sondeo":[{
+						"id":1,
+						"tipo":"pie",
+						"titulo":null,
+						"subtitulo":null,
+						"data":",%\nSí existe,19\nNo existe,76\nNs/nc,5",
+						"info":"Total 100%<br><strong>Base:</strong> 1200 entrevistas"
+					}]
+				},
+				{
+					"id":2,
+					"titulo":"Aprobación de Nadine Heredia",
+					"subtitulo":"¿Aprueba o desaprueba la labor que viene desarrollando Ollanta Humala como Presidente de la República?",
+					"hijos":false,
+					"padre":null,
+					"info":"<strong>Índice de popularidad:</strong> -40%<br><strong>Índice:</strong> (Aprueba – Desaprueba)<br><strong>Total 100%. Base:  1200 entrevistas</strong>",
+					"sondeo":[{
+						"id":3,
+						"tipo":"line",
+						"titulo":null,
+						"subtitulo":null,
+						"data":"Mes,Aprueba,Desaprueba,NS/NC\n2013-08,35,58,7\n2013-09,32,62,6\n2013-10,30,63,7\n2013-11,35,60,5\n2013-12,31,61,8\n2014-01,31,64,5\n2014-02,39,56,5\n2014-03,24,71,5\n2014-04,28,67,5\n2014-05,28,67,5\n2014-06,25,68,7\n2014-07,24,70,6\n2014-08,32,64,4\n2014-09,30,65,5\n2014-10,33,61,6\n2014-11,33,62,5\n2014-12,32,64,4\n2015-01,28,67,5\n2015-02,28,67,5\n2015-03,28,67,5\n2015-04,27,67,6\n2015-05,28,67,5\n2015-06,14,82,4\n2015-07,18,77,5\n2015-08,23,73,4\n"
+						
+					}]
+				},
+				
+				{
+					"id":5,
+					"titulo":"Aprobación de la Gestión de los Ministros",
+					"hijos":true,
+					"padre":null
+				},
+				{
+					"id":6,
+					"titulo":"Aprobación de Pedro Cateriano",
+					"padre":5,
+					"hijos":true
+
+				},
+				{
+					"id":7,
+					"titulo":"Aprobación de Alonso Segura",
+					"padre":5,
+					"hijos":false,
+					"subtitulo":"Dígame, ¿por cuál de los siguientes posibles candidatos no votaría nunca para elegir al presidente de la república?",
+					"info":"Total 100%<br><strong>Base:</strong> 1200 entrevistas",
+					"sondeo":[
+					{
+						"id":5,
+						"tipo":"stockbar",
+						"titulo":null,
+						"subtitulo":null,
+						"data":" ,Febrero 2015,Abril 2015\r\nM\u00e1s endeudado,26,19\r\nIgual de endeudado,37,22\r\nMenos endeudado,18,22\r\nSin deudas,13,27\r\nNs\/nc,6,10"
+					}]
+				},
+				{
+					"id":8,
+					"titulo":"Prueba Nivel",
+					"padre":6,
+					"hijos":true
+					
+				},
+				{
+					"id":9,
+					"titulo":"Nuevo nivel",
+					"padre":8,
+					"hijos":false,
+					"subtitulo":"Dígame, ¿por cuál de los siguientes posibles candidatos no votaría nunca para elegir al presidente de la república?",
+					"info":"Total 100%<br><strong>Base:</strong> 1200 entrevistas",
+					"sondeo":[
+					{
+						"id":5,
+						"tipo":"stockbar",
+						"titulo":null,
+						"subtitulo":null,
+						"data":",Abril 2015,Mayo 2015\nAlan Garcia,31,35\nAlejandro Toledo,19,19\nKeiko Fujimori,15,16\nDaniel Urresti,9,5\nMauricio Diez Canseco,3,3\nPedro P. Kuczynski,2,3\nCesar Acuna,2,2\nGregorio Santos,,2\nOtros,2,4\nNs/nc,17,11"
+					}]
+				}
+			]
+		},
+		{
+			"id":2,
+			"nombre":"Coyuntura",
+			"icono":"b2.png",
+			"imagen":"imgbg.jpg",
+			"temas":[
+				{
+					"id":1,
+					"titulo":"Aprobación de Ollanta Humala",
+					"subtitulo":"El gobierno ha aprobado un proyecto de ley que permite el acceso a viviendas a través del leasing y alquiler-venta. Dígame, ¿con esta ley aprobada, Ud. utilizaría o no utilizaría este sistema para comprar una vivienda",
+					"hijos":false,
+					"padre":null,
+					"info":"Total 100%<br><strong>Base:</strong> 1200 entrevistas",
+					"sondeo":[{
+						"id":1,
+						"tipo":"pie",
+						"titulo":null,
+						"subtitulo":null,
+						"data":",%\nSí existe,19\nNo existe,76\nNs/nc,5",
+						"info":"Total 100%<br><strong>Base:</strong> 1200 entrevistas"
+					}]
+
+					
+				}
+			]
+		},
+		{
+			"id":3,
+			"nombre":"Tema de fondo",
+			"icono":"b3.png",
+			"imagen":"imgbg.jpg",
+			"temas":[
+				{
+					"id":1,
+					"titulo":"Aprobación de Ollanta Humala",
+					"subtitulo":"El gobierno ha aprobado un proyecto de ley que permite el acceso a viviendas a través del leasing y alquiler-venta. Dígame, ¿con esta ley aprobada, Ud. utilizaría o no utilizaría este sistema para comprar una vivienda",
+					"hijos":false,
+					"padre":null,
+					"info":"Total 100%<br><strong>Base:</strong> 1200 entrevistas",
+					"sondeo":[{
+						"id":1,
+						"tipo":"pie",
+						"titulo":null,
+						"subtitulo":null,
+						"data":",%\nSí existe,19\nNo existe,76\nNs/nc,5",
+						"info":"Total 100%<br><strong>Base:</strong> 1200 entrevistas"
+					}]
+
+					
+				}
+			]
+		},
+		{
+			"id":4,
+			"nombre":"Electoral",
+			"icono":"b4.png",
+			"imagen":"imgbg.jpg",
+			"temas":[
+				{
+					"id":1,
+					"titulo":"Aprobación de Ollanta Humala",
+					"subtitulo":"El gobierno ha aprobado un proyecto de ley que permite el acceso a viviendas a través del leasing y alquiler-venta. Dígame, ¿con esta ley aprobada, Ud. utilizaría o no utilizaría este sistema para comprar una vivienda",
+					"hijos":false,
+					"padre":null,
+					"info":"Total 100%<br><strong>Base:</strong> 1200 entrevistas",
+					"sondeo":[{
+						"id":1,
+						"tipo":"pie",
+						"titulo":null,
+						"subtitulo":null,
+						"data":",%\nSí existe,19\nNo existe,76\nNs/nc,5",
+						"info":"Total 100%<br><strong>Base:</strong> 1200 entrevistas"
+					}]
+
+					
+				}
+			]
+		},
+		{
+			"id":5,
+			"nombre":"Economía",
+			"icono":"b5.png",
+			"imagen":"imgbg.jpg",
+			"temas":[
+				{
+					"id":1,
+					"titulo":"Aprobación de Ollanta Humala",
+					"subtitulo":"El gobierno ha aprobado un proyecto de ley que permite el acceso a viviendas a través del leasing y alquiler-venta. Dígame, ¿con esta ley aprobada, Ud. utilizaría o no utilizaría este sistema para comprar una vivienda",
+					"hijos":false,
+					"padre":null,
+					"info":"Total 100%<br><strong>Base:</strong> 1200 entrevistas",
+					"sondeo":[{
+						"id":1,
+						"tipo":"pie",
+						"titulo":null,
+						"subtitulo":null,
+						"data":",%\nSí existe,19\nNo existe,76\nNs/nc,5",
+						"info":"Total 100%<br><strong>Base:</strong> 1200 entrevistas"
+					}]
+
+					
+				}
+			]
+		}
+	]
+}

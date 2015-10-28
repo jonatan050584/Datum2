@@ -261,9 +261,13 @@ html {
 #sondeo .grafico.pie .area{
 	height: 400px;
 }
-#sondeo .grafico.stockbar .area{
+#sondeo .grafico.bar .area{
 	overflow-x:scroll;
 	height: 700px;
+}
+#sondeo .grafico.column .area{
+	overflow-x:scroll;
+	height: 300px;
 }
 #sondeo .grafico.line .area{
 	height: 340px;
@@ -354,6 +358,44 @@ html {
 #contacto .item.over .texto{
 	background-color: #9e027e;
 	color: #fff;
+}
+#datum{
+	padding: 30px;
+}
+#datum .cont .logo{
+	display: block;
+	margin: auto;
+}
+#datum .cont p{
+	font-family: 'HelveticaNeueLight';
+	font-size: 14px;
+	line-height: 18px;
+	text-align: justify;
+	color: #545454;
+}
+#resumen{
+	padding: 30px;
+}
+#resumen ol{
+	margin: 0px;
+	padding: 20px;
+	color: #9e027e;
+	font-family: 'HelveticaNeueBold';
+}
+#resumen ol li{
+	font-family: 'HelveticaNeueBold';
+	font-size: 14px;
+	line-height: 18px;
+}
+#resumen ol li strong{
+	font-family: 'HelveticaNeueBold';
+	font-weight: normal;
+	color: #545454;
+}
+#resumen ol li span{
+	font-family: 'HelveticaNeueLight';
+	
+	color: #545454;
 }
 #menusondeo{
 	position: fixed;

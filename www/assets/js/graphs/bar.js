@@ -1,4 +1,4 @@
-var StockBar = function(val){
+var Bar = function(val){
 
     this.data = val;
     
@@ -18,18 +18,18 @@ var StockBar = function(val){
         var categorias = new Array();
 
         var csv = $.csv.toArrays(val.data);
-        console.log(csv);
+
         
         var cantSeries=csv[0].length-1;
         
-        console.log(cantSeries);
+        //console.log(cantSeries);
 
         var seriesOptions = [],
             seriesCounter = 0;
 
         for(var j=0;j<csv[0].length;j++){
             if(j>0){
-                console.log(j);
+                //console.log(j);
                 seriesOptions[j-1]={
                     name:csv[0][j],
                     data:[]

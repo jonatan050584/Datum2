@@ -70,7 +70,7 @@ var ItemTema = function(keycat,data){
 				if(data.hijos==true){
 					getContent({page:"categoria",keycat:keycat,padre:data.id},true);			
 				}else{
-					getContent({page:"sondeo",tema:data},true);
+					getContent({page:"sondeo",tema:data,categoria:$("#categoria .nombre").html()},true);
 				}
 			}
 		})
